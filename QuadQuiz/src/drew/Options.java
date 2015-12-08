@@ -34,7 +34,7 @@ public class Options extends JPanel
 	    	answers[i].setVisible(true);
 	    	add(answers[i]);
 	    }
-	    answers[0].setText("1. Assign instructional coach to work with new teachers on instructional methods.");
+	    answers[0].setText("<html>1. Assign instructional coach to work with new <br> teachers on instructional methods.</html>");
 	    answers[1].setText("");
 	    answers[2].setText("");
 	    answers[3].setText("");
