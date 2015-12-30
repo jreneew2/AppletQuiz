@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+#quadrants {
+	width: 100%;
+	height: 620px;
+	background-color: #ccc;
+}
+
+.quadrant{
+	width: 49%;
+	height: 300px;
+	padding: 5px;
+	margin: 5px;
+	background-color: #00f;
+	float: left;
+}
+
+#options {
+	background-color: #eee;
+}
+
+.option {
+	display: inline-block;
+	background-color: #fc3;
+	padding: 3px;
+	margin: 5px 10px;
+	cursor: move;
+}
+
+.quadrant .option {
+	/*font-size: 50%;*/
+}
