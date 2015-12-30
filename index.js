@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	var allCorrect = true;
 	console.log('Configuring Dragula for containers w/ d.gebt');
 	var drake = dragula(
 		[
@@ -9,7 +10,7 @@ $(document).ready(function () {
 			document.getElementById('catD'),
 		]
 	);
-
+	allCorrect = false;
 	drake.on('drop', function(el, target, source, sibling){
 		console.log("Dropped:", el);
 		var optionsLeft = $('#options .option').length;
@@ -17,30 +18,31 @@ $(document).ready(function () {
 		var catAChildren = $("#catA").children();
 		console.log('Children of catA:', catAChildren);
 
-		var allCorrect = true;
+		allCorrect = true;
 		if(optionsLeft > 0) {
-			$("#catC").children().each(function(i, e){
-			if(!$(e).hasClass('catC')){
-				allCorrect = false;
-			}
-			})
-			$("#catA").children().each(function(i, e){
-			if(!$(e).hasClass('catA')){
-				allCorrect = false;
-			}
-			})
-			$("#catB").children().each(function(i, e){
-			if(!$(e).hasClass('catB')){
-				allCorrect = false;
-			}
-			})
-			$("#catD").children().each(function(i, e){
-			if(!$(e).hasClass('catD')){
-				allCorrect = false;
-			}
-			})
-			console.log("allCorrect", allCorrect);
+			allCorrect = false;
 		}
+		$("#catC").children().each(function(i, e){
+		if(!$(e).hasClass('catC')){
+			allCorrect = false;
+		}
+		});
+		$("#catD").children().each(function(i, e){
+		if(!$(e).hasClass('catD')){
+			allCorrect = false;
+		}
+		});
+		$("#catA").children().each(function(i, e){
+		if(!$(e).hasClass('catA')){
+			allCorrect = false;
+		}
+		});
+		$("#catB").children().each(function(i, e){
+		if(!$(e).hasClass('catB')){
+			allCorrect = false;
+		}
+		});
+		console.log("allCorrect", allCorrect);
 		/*
 		for(i = 0; i < quad1Children.length; i++) {
 			console.log('loop');
@@ -50,9 +52,12 @@ $(document).ready(function () {
 		}
 		*/
 	})
-	$('checkButton').click(function() {
-		if(allCorrect === true) {
-			console.log("YOU DID IT!");
+	$('#checkButton').click(function() {
+		if(allCorrect == true) {
+			alert("Nice job! You got all of the quadrants correct!");
+		}
+		else {
+			alert("Sorry, try again!");
 		}
 	});
 });

@@ -1,24 +1,46 @@
 * {
 	box-sizing: border-box;
+	font-family: Verdana;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 3px;
 }
 
 #quadrants {
-	width: 100%;
+	width: 980px;
 	height: 620px;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
+	top: 0;
+	left: 300px;
+	position: absolute;
 }
 
 .quadrant{
-	width: 49%;
-	height: 300px;
+	width: 450px;
+	height: 350px;
 	padding: 5px;
 	margin: 5px;
 	background-color: #00f;
 	float: left;
 }
 
+.quadrantDrop {
+	height: 300px;
+	width: 430px;
+	overflow-y: auto;
+	/*background-color: #ccc;*/
+}
+
 #options {
-	background-color: #eee;
+	width: 300px;
+	background-color: #669999;
+	min-height: 715px;
+	padding: 10px 10px 10px 10px;
+	top: 0;
+	left: 0;
+	position: absolute;
 }
 
 .option {
@@ -27,8 +49,35 @@
 	padding: 3px;
 	margin: 5px 10px;
 	cursor: move;
+	border-radius: 5px;
+	font-family: Verdana;
+	font-size: 12px;
 }
 
 .quadrant .option {
 	/*font-size: 50%;*/
+}
+
+.button {
+
+}
+
+.button:hover {
+
+}
+
+p {
+	font-size: 15px;
+}
+
+#playingField {
+	width: 1280px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #3f6;
+	position: relative;
+}
+
+#checkButton {
+	float: right;
 }
