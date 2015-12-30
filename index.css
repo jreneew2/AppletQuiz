@@ -6,7 +6,7 @@
 h2 {
 	font-size: 20px;
 	padding: 5px;
-	color: #f1f1f1;
+	color: #FEFEFE;
 	margin: 0px;
 }
 
@@ -58,7 +58,7 @@ h2 {
 }
 
 #quadD h2{
-	background-color: #F6E49E;
+	background-color: #E3C965;
 }
 
 .quadrantDrop {
@@ -80,7 +80,7 @@ h2 {
 
 .option {
 	display: inline-block;
-	background-color: #fc3;
+	background-color: #F5F5F5;
 	padding: 3px;
 	margin: 5px 10px;
 	cursor: move;
@@ -115,4 +115,8 @@ p {
 
 #checkButton {
 	float: right;
+}
+
+.optionNum {
+	font-weight: bold;
 }
