@@ -5,7 +5,9 @@
 
 h2 {
 	font-size: 20px;
-	margin: 3px;
+	padding: 5px;
+	color: #f1f1f1;
+	margin: 0px;
 }
 
 #quadrants {
@@ -15,15 +17,48 @@ h2 {
 	top: 0;
 	left: 300px;
 	position: absolute;
+	margin-left: 15px;
 }
 
 .quadrant{
 	width: 450px;
 	height: 350px;
-	padding: 5px;
-	margin: 5px;
+	padding: 0px;
+	margin: 0 10px 10px 0px;
 	background-color: #00f;
 	float: left;
+}
+
+#quadA {
+	background-color: rgba(154, 40, 39, 0.75);
+}
+
+#quadA h2{
+	background-color: #9A2827
+}
+
+#quadB {
+	 background-color: rgba(37, 67, 131, 0.75);
+}
+
+#quadB h2{
+	 background-color: #254383;
+}
+
+#quadC {
+	background-color: rgba(130, 149, 95, 0.75);
+}
+
+#quadC h2 {
+	background-color: #82955F;
+}
+
+#quadD {
+	background-color: rgba(246, 228, 158, 0.75);
+}
+
+#quadD h2{
+	background-color: #F6E49E;
 }
 
 .quadrantDrop {
